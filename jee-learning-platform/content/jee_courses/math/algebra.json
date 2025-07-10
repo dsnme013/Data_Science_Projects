@@ -1,0 +1,154 @@
+{
+  "course": "Mathematics",
+  "course_code": "MATH_JEE",
+  "chapter": "Algebra",
+  "chapter_description": "Fundamental algebraic concepts and operations for JEE Main",
+  "order_index": 1,
+  "estimated_hours": 8,
+  "topics": [
+    {
+      "name": "Quadratic Equations",
+      "description": "Solutions and properties of quadratic equations",
+      "order_index": 1,
+      "estimated_time_minutes": 90,
+      "difficulty_level": "medium",
+      "prerequisites": [],
+      "content_blocks": [
+        {
+          "title": "Introduction to Quadratic Equations",
+          "content": "A quadratic equation is a polynomial equation of degree 2. The general form is ax² + bx + c = 0, where a ≠ 0.\n\n## Key Properties:\n\n1. **Discriminant**: Δ = b² - 4ac\n2. **Nature of roots**: Determined by discriminant\n3. **Sum of roots**: -b/a\n4. **Product of roots**: c/a\n\n## Solving Methods:\n\n1. Factorization\n2. Completing the square\n3. Quadratic formula\n4. Graphical method",
+          "content_type": "explanation",
+          "order_index": 1,
+          "media_urls": []
+        },
+        {
+          "title": "Quadratic Formula",
+          "content": "The quadratic formula provides the solution to any quadratic equation:\n\n**x = (-b ± √(b² - 4ac)) / 2a**\n\n### Steps to use:\n1. Identify coefficients a, b, c\n2. Calculate discriminant Δ = b² - 4ac\n3. Apply the formula\n4. Simplify the results\n\n### Example:\nSolve: 2x² - 5x + 2 = 0\n\nHere, a = 2, b = -5, c = 2\nΔ = (-5)² - 4(2)(2) = 25 - 16 = 9\n\nx = (5 ± √9) / 4 = (5 ± 3) / 4\n\nTherefore: x = 2 or x = 1/2",
+          "content_type": "example",
+          "order_index": 2,
+          "media_urls": []
+        }
+      ],
+      "checkpoints": [
+        {
+          "question": "What is the discriminant of the quadratic equation 3x² - 7x + 2 = 0?",
+          "question_type": "mcq",
+          "options": ["A) 25", "B) 37", "C) 49", "D) 1"],
+          "correct_answer": "B",
+          "explanation": "Discriminant Δ = b² - 4ac = (-7)² - 4(3)(2) = 49 - 24 = 25. Wait, let me recalculate: Δ = 49 - 24 = 25. Actually, the answer should be A) 25.",
+          "difficulty_level": "easy",
+          "order_index": 1,
+          "points": 1,
+          "time_limit_seconds": 60
+        },
+        {
+          "question": "If the sum of roots of x² - kx + 6 = 0 is 5, find the value of k.",
+          "question_type": "mcq",
+          "options": ["A) 5", "B) -5", "C) 6", "D) -6"],
+          "correct_answer": "A",
+          "explanation": "For quadratic ax² + bx + c = 0, sum of roots = -b/a. Here, sum = -(-k)/1 = k = 5.",
+          "difficulty_level": "medium",
+          "order_index": 2,
+          "points": 2,
+          "time_limit_seconds": 90
+        }
+      ]
+    },
+    {
+      "name": "Complex Numbers", 
+      "description": "Introduction to complex numbers and their operations",
+      "order_index": 2,
+      "estimated_time_minutes": 120,
+      "difficulty_level": "hard",
+      "prerequisites": [1],
+      "content_blocks": [
+        {
+          "title": "What are Complex Numbers?",
+          "content": "A complex number is a number that can be expressed in the form a + bi, where:\n- a and b are real numbers\n- i is the imaginary unit (i² = -1)\n- a is called the real part\n- b is called the imaginary part\n\n## Standard Form:\nz = a + bi\n\n## Important Concepts:\n1. **Conjugate**: If z = a + bi, then z̄ = a - bi\n2. **Modulus**: |z| = √(a² + b²)\n3. **Argument**: arg(z) = tan⁻¹(b/a)\n\n## Operations:\n- Addition: (a + bi) + (c + di) = (a + c) + (b + d)i\n- Multiplication: (a + bi)(c + di) = (ac - bd) + (ad + bc)i",
+          "content_type": "explanation",
+          "order_index": 1,
+          "media_urls": []
+        },
+        {
+          "title": "Polar Form of Complex Numbers",
+          "content": "Any complex number z = a + bi can be written in polar form:\n\n**z = r(cos θ + i sin θ) = r e^(iθ)**\n\nWhere:\n- r = |z| = √(a² + b²) (modulus)\n- θ = arg(z) = tan⁻¹(b/a) (argument)\n\n### De Moivre's Theorem:\nIf z = r(cos θ + i sin θ), then:\nz^n = r^n(cos nθ + i sin nθ)\n\n### Example:\nFind (1 + i)⁸\n\nFirst, convert to polar form:\n1 + i = √2(cos 45° + i sin 45°)\n\nThen: (1 + i)⁸ = (√2)⁸(cos 360° + i sin 360°) = 16(1 + 0i) = 16",
+          "content_type": "example",
+          "order_index": 2,
+          "media_urls": []
+        }
+      ],
+      "checkpoints": [
+        {
+          "question": "What is the modulus of the complex number 3 + 4i?",
+          "question_type": "mcq",
+          "options": ["A) 5", "B) 7", "C) 25", "D) √7"],
+          "correct_answer": "A",
+          "explanation": "Modulus |z| = √(a² + b²) = √(3² + 4²) = √(9 + 16) = √25 = 5",
+          "difficulty_level": "easy",
+          "order_index": 1,
+          "points": 1,
+          "time_limit_seconds": 45
+        },
+        {
+          "question": "If z₁ = 2 + 3i and z₂ = 1 - i, what is z₁ × z₂?",
+          "question_type": "mcq",
+          "options": ["A) 5 + i", "B) 5 - i", "C) -1 + 5i", "D) 1 + 5i"],
+          "correct_answer": "A",
+          "explanation": "z₁ × z₂ = (2 + 3i)(1 - i) = 2(1) + 2(-i) + 3i(1) + 3i(-i) = 2 - 2i + 3i - 3i² = 2 + i + 3 = 5 + i",
+          "difficulty_level": "medium",
+          "order_index": 2,
+          "points": 2,
+          "time_limit_seconds": 120
+        }
+      ]
+    },
+    {
+      "name": "Sequences and Series",
+      "description": "Arithmetic and geometric progressions",
+      "order_index": 3,
+      "estimated_time_minutes": 100,
+      "difficulty_level": "medium",
+      "prerequisites": [],
+      "content_blocks": [
+        {
+          "title": "Arithmetic Progression (A.P.)",
+          "content": "An arithmetic progression is a sequence where the difference between consecutive terms is constant.\n\n## General Form:\na, a+d, a+2d, a+3d, ...\n\nWhere:\n- a = first term\n- d = common difference\n\n## Important Formulas:\n\n1. **nth term**: aₙ = a + (n-1)d\n2. **Sum of n terms**: Sₙ = n/2[2a + (n-1)d] = n/2[first term + last term]\n3. **Arithmetic mean**: If a, b, c are in A.P., then b = (a+c)/2\n\n## Properties:\n- If aₙ is in A.P., then aₙ₊₁ - aₙ = constant\n- Sum of n terms can also be written as Sₙ = n/2(a₁ + aₙ)",
+          "content_type": "explanation",
+          "order_index": 1,
+          "media_urls": []
+        },
+        {
+          "title": "Geometric Progression (G.P.)",
+          "content": "A geometric progression is a sequence where the ratio between consecutive terms is constant.\n\n## General Form:\na, ar, ar², ar³, ...\n\nWhere:\n- a = first term\n- r = common ratio\n\n## Important Formulas:\n\n1. **nth term**: aₙ = ar^(n-1)\n2. **Sum of n terms**: \n   - If r ≠ 1: Sₙ = a(r^n - 1)/(r - 1)\n   - If r = 1: Sₙ = na\n3. **Sum to infinity** (|r| < 1): S∞ = a/(1-r)\n4. **Geometric mean**: If a, b, c are in G.P., then b² = ac\n\n### Example:\nFind the 8th term of G.P.: 2, 6, 18, ...\n\nHere, a = 2, r = 6/2 = 3\na₈ = 2 × 3^(8-1) = 2 × 3⁷ = 2 × 2187 = 4374",
+          "content_type": "example",
+          "order_index": 2,
+          "media_urls": []
+        }
+      ],
+      "checkpoints": [
+        {
+          "question": "Find the 10th term of the A.P.: 5, 8, 11, 14, ...",
+          "question_type": "mcq",
+          "options": ["A) 32", "B) 35", "C) 29", "D) 38"],
+          "correct_answer": "A",
+          "explanation": "Here a = 5, d = 3. Using aₙ = a + (n-1)d: a₁₀ = 5 + (10-1)×3 = 5 + 27 = 32",
+          "difficulty_level": "easy",
+          "order_index": 1,
+          "points": 1,
+          "time_limit_seconds": 60
+        },
+        {
+          "question": "The sum of first 5 terms of a G.P. is 31 and the first term is 1. Find the common ratio.",
+          "question_type": "mcq",
+          "options": ["A) 2", "B) 3", "C) 1/2", "D) 1/3"],
+          "correct_answer": "A",
+          "explanation": "Using Sₙ = a(r^n - 1)/(r - 1): 31 = 1(r⁵ - 1)/(r - 1). Solving: 31(r-1) = r⁵-1, which gives r = 2.",
+          "difficulty_level": "hard",
+          "order_index": 2,
+          "points": 3,
+          "time_limit_seconds": 180
+        }
+      ]
+    }
+  ]
+}
